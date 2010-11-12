@@ -192,6 +192,7 @@ table {
 }
 th, td {
     padding: 0.3em;
+    border: none;
 }
 
 caption {
