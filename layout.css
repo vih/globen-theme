@@ -23,11 +23,6 @@
   margin: 0 4em;
 }
 
-#content {
-  width: 90%;
-  margin: 3em 4em;
-}
-
 body.sidebar-first #content {
   width: 80%;
   left: 20%; /* LTR */
@@ -52,6 +47,14 @@ body.two-sidebars #sidebar-first {
 #sidebar-second {
   float: right; /* LTR */
   width: 20%;
+}
+
+#sidebar-first .section, #content .section, #sidebar-second .section {
+  margin: 3em 4em;
+}
+
+#footer .section {
+  margin: 1em 4em;
 }
 
 html {
