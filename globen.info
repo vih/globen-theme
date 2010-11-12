@@ -1,0 +1,7 @@
+name = globen
+description = Layout is created for Vejle Idrætshøjskoles Kursuscenter by Lars Olesen.
+package = Core
+version = 0.1.0
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = layout.css
