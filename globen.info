@@ -1,7 +1,7 @@
 name = globen
 description = Layout for kursuscenter.vih.dk created by Lars Olesen in 2005. Layout has been rewritten to Drupal 7 and is based on Stark.
 package = Core
-version = 0.1.0
+version = 7.x-0.1
 core = 7.x
 engine = phptemplate
 stylesheets[all][] = layout.css
