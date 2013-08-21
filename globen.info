@@ -4,4 +4,4 @@ package = Core
 version = 7.x-0.1
 core = 7.x
 engine = phptemplate
-stylesheets[all][] = layout.css
+stylesheets[all][] = css/layout.css
