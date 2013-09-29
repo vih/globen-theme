@@ -11,7 +11,13 @@
  */
 ?>
 <header id="header" class="header" role="header">
-  <div class="container">
+    <h1 id="brand">
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="brand">
+          <?php print $site_name; ?>
+        </a>
+      <?php endif; ?>
+    </h1>
     <div id="navigation" class="navbar">
       <div class="navbar-inner">
         <div class="container clearfix">
@@ -27,13 +33,6 @@
               <span class="icon-search"></span>
             </a>
           <?php endif; ?>
-
-          <?php if ($logo): ?>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="pull-left brand">
-              <?php print $site_name; ?>
-            </a>
-          <?php endif; ?>
-
           <div class="nav-collapse nav-menu-collapse">
             <div class="inner">
               <?php if ($main_menu): ?>
@@ -53,7 +52,6 @@
           </div>
 
       </div>
-    </div> 
   </div> <!-- /#navigation -->
 </header>
 
