@@ -23,12 +23,3 @@ function globen_css_alter(&$css) {
   unset($css[$radix_path . '/assets/stylesheets/radix-print.css']);
 }
 
-/**
- * Implements template_preprocess_page().
- */
-function globen_preprocess_page(&$variables) {
-  // Add copyright to theme.
-  if ($copyright = theme_get_setting('copyright')) {
-    $variables['copyright'] = check_markup($copyright['value'], $copyright['format']);
-  }
-}
