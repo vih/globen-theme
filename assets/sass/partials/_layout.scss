@@ -1,0 +1,54 @@
+//
+// Layout
+// Styles for main layout
+// --------------------------------------------------
+
+#header {
+  h1 {
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: $branding-color;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+  
+    a {
+      color: white;
+    }
+  }
+  #navigation {
+    margin-top: 0 !important;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .navbar-inner {
+    @include border-radius(0);
+  }
+  #search-form input {
+    border-color: black;
+  }
+}
+
+#main {
+  margin-left: 2em;
+  margin-right: 2em;
+  h1 {
+    font-size:2em;
+    text-transform:uppercase;
+    color: $branding-color;
+  }
+}
+
+#footer {
+  background-color: $branding-color;
+  padding-top: 20px;
+  
+  a {
+    color: white;
+  }
+}

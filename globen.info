@@ -1,7 +1,27 @@
-name = globen
-description = Layout for kursuscenter.vih.dk created by Lars Olesen in 2005. Layout has been rewritten to Drupal 7 and is based on Stark.
-package = Core
-version = 7.x-0.1
-core = 7.x
-engine = phptemplate
-stylesheets[all][] = css/layout.css
+name        = Globen
+description = A starter theme based on Radix
+screenshot  = screenshot.png
+core        = 7.x
+
+; Base - Radix
+base theme  = radix
+
+
+; Regions
+regions[content] = Content
+
+; Panels
+plugins[panels][layouts] = panels/layouts
+plugins[panels][styles] = panels/styles
+
+; CSS - General
+stylesheets[all][]     = assets/stylesheets/screen.css
+stylesheets[print][]   = assets/stylesheets/print.css
+
+; CSS - Conditional
+stylesheets-conditional[IE 7][all][] = assets/stylesheets/ie7.css
+stylesheets-conditional[IE 8][all][] = assets/stylesheets/ie8.css
+
+; Javascript
+scripts[] = assets/javascripts/script.js
+
